@@ -23,8 +23,14 @@ app.get('/',(req,res) => {
     res.render('index');
 });
 
+//Catch form submit
+app.post('/',(req,res) => {
+    res.send(req.body);
+    console.log(req.body);
+});
+
 //Define port
-const port = 4000;
+const port = 5000;
 
 //Start server
 const server = app.listen(port, () => console.log(`Server started on port ${port}`));
