@@ -1,0 +1,26 @@
+{
+  "name": "smsapp",
+  "version": "1.0.0",
+  "description": "send sms from node",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ameCont/smsapp.git"
+  },
+  "author": "etlv",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ameCont/smsapp/issues"
+  },
+  "homepage": "https://github.com/ameCont/smsapp#readme",
+  "dependencies": {
+    "body-parse": "^0.1.0",
+    "ejs": "^3.1.3",
+    "express": "^4.17.1",
+    "nexmo": "^2.6.0",
+    "socket.io": "^2.3.0"
+  }
+}
