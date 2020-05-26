@@ -37,7 +37,7 @@ app.post('/',(req,res) => {
     const text = req.body.text;
 
     nexmo.message.sendSms(
-        '0765842556', number, text, {type: 'unicode'},
+        '+40 765 842 556', number, text, {type: 'unicode'},
         (err, responseData) => {
             if(err) {
                 console.log(err);
@@ -50,7 +50,7 @@ app.post('/',(req,res) => {
 });
 
 //Define port
-const port = 5000;
+const port = 4000;
 
 //Start server
 const server = app.listen(port, () => console.log(`Server started on port ${port}`));
